@@ -1,0 +1,21 @@
+git常用命令
+git add 添加一个文件到缓存区
+git commit 从缓存区提交文件到分支中
+git status命令看看结果
+git dif 比较提交文件的变化
+git log 查看commit的记录
+git log --pretty=oneline 显示commit id
+git reset --hard HEAD^ 回退到上一个版本
+git reset --hard 3628164  指定commit id回退
+    用命令git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
+git checkout -- 文件名  恢复文件，--很重要，不加--则代表切换分支
+    第一种情况，如果文件已经从工作区添加到了暂存区，则回退到暂存区的原有的情况
+	第二种情况，如果文件没有添加到暂存区，则直接修改本地工作区的内容。
+    场景一：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+    场景二：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+git rm 用于删除版本库的一个文件
+   场景一：误删了工作区的某个文件，想恢复的情况，使用git checkout -- file 恢复到工作区
+   场景二：想删除工作区的内容，也想删除版本库的内容，可以手动rm本地文件，然后git rm 删除版本库文件，最后git commit -m 
+
+	
+	
