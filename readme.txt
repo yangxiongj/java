@@ -59,3 +59,5 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2018-07-24  9:59:03
+
+-- drop create update select
