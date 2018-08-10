@@ -1,2 +1,3 @@
 # java
-学习工作
+爱学习,爱java
+爱git，爱gitlab
